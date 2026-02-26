@@ -26,6 +26,11 @@
     <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/Controllers/WeatherForecastController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/WeatherForecast.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Entities/BaseEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Entities/FinanancialGoal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Entities/Transaction.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Enums/FinancialGoalStatusEnum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Enums/TransactionTypeEnum.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;99172aff&quot;,
@@ -55,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772064004441</updated>
-      <workItem from="1772064005652" duration="2377000" />
+      <workItem from="1772064005652" duration="3563000" />
     </task>
     <servers />
   </component>
