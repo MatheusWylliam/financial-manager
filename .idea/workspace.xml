@@ -23,9 +23,20 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/Controllers/WeatherForecastController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/Controllers/FinancialGoalController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/Controllers/ReportsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/Controllers/TransactionController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.API/WeatherForecast.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Commands/RemoveTransaction/RemoveTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Commands/RemoveTransaction/RemoveTransactionCommandHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Commands/SendTransaction/SendTransactionCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Commands/SendTransaction/SendTransactionCommandHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Queries/GetReports/GetReportsQuery.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Queries/GetReports/GetReportsQueryHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Queries/GetTransactionsDetails/GetTransactionsDetailsQuery.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Queries/GetTransactionsDetails/GetTransactionsDetailsQueryHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Queries/ListTransactions/ListTransactionsQuery.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Application/Queries/ListTransactions/ListTransactionsQueryHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Entities/BaseEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Entities/FinanancialGoal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FinancialGoalManager.Core/Entities/Transaction.cs" root0="SKIP_HIGHLIGHTING" />
@@ -37,6 +48,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="3ABRVsWdKY07xvF78n4SwK4Uidp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772064004441</updated>
-      <workItem from="1772064005652" duration="3563000" />
+      <workItem from="1772064005652" duration="5262000" />
     </task>
     <servers />
   </component>
