@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,9 +8,16 @@ namespace FinancialGoalManager.API.Controllers
     [ApiController]
     public class TransactionController : ControllerBase
     {
+        private readonly IMediator _mediator;
+        public TransactionController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
         [HttpPost]
         public async Task<IActionResult> SendTransaction()
         {
+
 
             return Created("", true);
         }
