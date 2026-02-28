@@ -1,22 +1,8 @@
-using FinancialGoalManager.Application.Commands.FinancialGoals.RegisterGoal;
-using FinancialGoalManager.Core.Repositories;
-using FinancialGoalManager.Infrastructure.Persistence.Repositories;
+using FinancialGoalManager.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// add services to the container.
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddMediatR(config =>
-{
-    config.RegisterServicesFromAssembly(typeof(RegisterGoalCommand).Assembly);
-});
-
-builder.Services.AddScoped<IFinancialGoalRepository, FinancialGoalRepository>();
-builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
-builder.Services.AddScoped<IReportsRepository, ReportsRepository>();
+builder.ConfigureServices();
 
 var app = builder.Build();
 
