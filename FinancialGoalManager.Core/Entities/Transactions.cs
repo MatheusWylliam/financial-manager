@@ -2,9 +2,9 @@ using FinancialGoalManager.Core.Enums;
 
 namespace FinancialGoalManager.Core.Entities
 {
-    public class Transaction : BaseEntity
+    public class Transactions : BaseEntity
     {
-        public Transaction(decimal amount, TransactionTypeEnum transactionType, DateTime transactionDate)
+        public Transactions(decimal amount, TransactionTypeEnum transactionType, DateTime transactionDate)
         {
             Amount = amount;
             TransactionType = transactionType;

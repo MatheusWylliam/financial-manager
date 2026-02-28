@@ -1,18 +1,21 @@
+using FinancialGoalManager.Core.DTOs;
 using FinancialGoalManager.Core.Repositories;
 
 namespace FinancialGoalManager.Infrastructure.Persistence.Repositories
 {
     public class ReportsRepository : IReportsRepository
     {
-        
+        // Add D.I do database
+
         public ReportsRepository()
         {
-            
+            // context
         }
 
-        public Task GetReports()
+        public async Task<List<ReportsDto>> GetReports()
         {
-            throw new NotImplementedException();
+            
+            return new List<ReportsDto>();
         }
     }
 }
