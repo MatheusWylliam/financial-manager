@@ -3,8 +3,8 @@ using MediatR;
 
 namespace FinancialGoalManager.Application.Queries.Transaction.GetTransactionsDetails
 {
-    public class GetTransactionsDetailsQuery : IRequest<List<Transaction>>
+    public class GetTransactionsDetailsQuery : IRequest<List<Transactions>>
     {
-
+        // nao agora
     }
 }

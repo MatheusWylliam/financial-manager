@@ -1,7 +1,10 @@
+using FinancialGoalManager.Core.DTOs;
+using MediatR;
+
 namespace FinancialGoalManager.Application.Queries.Reports.GetReports
 {
-    public class GetReportsQuery
+    public class GetReportsQuery : IRequest<List<ReportsDto>>
     {
-
+        // nao agora
     }
 }
