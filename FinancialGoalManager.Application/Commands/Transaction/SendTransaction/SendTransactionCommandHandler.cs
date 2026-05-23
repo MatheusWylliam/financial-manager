@@ -15,9 +15,9 @@ namespace FinancialGoalManager.Application.Commands.Transaction.SendTransaction
 
         public async Task Handle(SendTransactionCommand command, CancellationToken cancellationToken)
         {
-            var transaction = new Transactions(command.Amount,
-                command.TransactionType,
-                command.TransactionDate);
+            var transaction = new Core.Entities.Transaction(command.Amount,
+                                              command.TransactionType,
+                                              command.TransactionDate);
 
             await _unitOfWork.BeginTransactionAsync();
             await _unitOfWork.TransactionRepository.SendTransaction(transaction);
