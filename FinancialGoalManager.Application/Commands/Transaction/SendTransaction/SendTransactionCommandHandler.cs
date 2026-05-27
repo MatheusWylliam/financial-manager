@@ -1,4 +1,3 @@
-using FinancialGoalManager.Core.Entities;
 using FinancialGoalManager.Infrastructure.Persistence;
 using MediatR;
 
@@ -9,10 +8,8 @@ namespace FinancialGoalManager.Application.Commands.Transaction.SendTransaction
         private readonly IUnitOfWork _unitOfWork;
 
         public SendTransactionCommandHandler(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
-
+            => _unitOfWork = unitOfWork;
+        
         public async Task Handle(SendTransactionCommand command, CancellationToken cancellationToken)
         {
             var transaction = new Core.Entities.Transaction(command.Amount,

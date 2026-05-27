@@ -8,10 +8,8 @@ namespace FinancialGoalManager.Application.Commands.FinancialGoals.UploadCover
         private readonly IUnitOfWork _unitOfWork;
 
         public UploadCoverCommandHandler(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
-
+            =>_unitOfWork = unitOfWork;
+        
         public async Task<bool> Handle(UploadCoverCommand request, CancellationToken cancellationToken)
         {
             await _unitOfWork.BeginTransactionAsync();

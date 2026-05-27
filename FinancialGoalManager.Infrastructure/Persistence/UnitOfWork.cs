@@ -8,9 +8,9 @@ namespace FinancialGoalManager.Infrastructure.Persistence
         private IDbContextTransaction _transaction;
         private readonly FinancialGoalManagerDbContext _context;
         public UnitOfWork(FinancialGoalManagerDbContext context,
-            IFinancialGoalRepository financialGoalRepository,
-            IReportsRepository reportsRepository,
-            ITransactionRepository transactionRepository)
+                          IFinancialGoalRepository financialGoalRepository,
+                          IReportsRepository reportsRepository,
+                          ITransactionRepository transactionRepository)
         {
             _context = context;
             FinancialGoalRepository = financialGoalRepository;
@@ -19,9 +19,7 @@ namespace FinancialGoalManager.Infrastructure.Persistence
         }
 
         public IFinancialGoalRepository FinancialGoalRepository { get; }
-
         public IReportsRepository ReportsRepository { get; }
-
         public ITransactionRepository TransactionRepository { get; }
 
         public async Task BeginTransactionAsync()
