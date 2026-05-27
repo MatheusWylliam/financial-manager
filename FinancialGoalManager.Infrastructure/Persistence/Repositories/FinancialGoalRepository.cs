@@ -12,7 +12,7 @@ namespace FinancialGoalManager.Infrastructure.Persistence.Repositories
         public FinancialGoalRepository(FinancialGoalManagerDbContext context)
             => _context = context;
 
-        public async Task<List<FinancialGoalDto>> ListGoals()
+        public async Task<List<FinancialGoalDto>> ListGoalsAsync()
         {
             var financialGoals = await _context.FinancialGoals.Select(goal => new FinancialGoalDto
             {
@@ -25,15 +25,15 @@ namespace FinancialGoalManager.Infrastructure.Persistence.Repositories
         }
 
         public async Task<FinancialGoal> GetGoalsById(int id)
-            => await _context.FinancialGoals.SingleOrDefaultAsync(i => i.Id == id);
+           => await _context.FinancialGoals.SingleOrDefaultAsync(i => i.Id == id);
 
         public async Task DeleteGoal(FinancialGoal financialGoal)
             => _context.FinancialGoals.Remove(financialGoal);
 
-        public async Task<List<FinancialGoal>> GetGoalsDetails()
+        public async Task<List<FinancialGoal>> GetGoalsDetailsAsync()
             => await _context.FinancialGoals.ToListAsync();
 
-        public async Task RegisterGoal(FinancialGoal financialGoal)
+        public async Task RegisterGoalAsync(FinancialGoal financialGoal)
             => await _context.FinancialGoals.AddAsync(financialGoal);
 
         public async Task UpdateGoal(FinancialGoal financialGoal)
