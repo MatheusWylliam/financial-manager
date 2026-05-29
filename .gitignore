@@ -365,3 +365,12 @@ FodyWeavers.xsd
 # JetBrains Rider / IntelliJ
 .idea/
 *.sln.iml
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Arquivos sensíveis
+appsettings.Development.json
+appsettings.Local.json
+*.env
